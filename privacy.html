@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidad de PATRIMONIO RADAR: uso de Google Drive, cifrado, conservación, revocación y contacto.">
+  <title>PATRIMONIO RADAR · Política de privacidad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="shell"><a class="brand" href="./">PATRIMONIO RADAR</a><nav aria-label="Navegación"><a href="./">Presentación</a></nav></header>
+  <main class="shell policy" id="contenido">
+    <p class="eyebrow">Última actualización: 18 de noviembre de 2026</p>
+    <h1>Política de privacidad</h1>
+    <p class="intro">Esta política describe el sitio de presentación y el componente de respaldo de PATRIMONIO RADAR, una aplicación personal mantenida por el titular de la cuenta de GitHub <a href="https://github.com/pocojocon">pocojocon</a>.</p>
+    <section><h2>1. Alcance y finalidad</h2>
+      <p>La aplicación organiza información pública sobre empresas y conserva un historial privado de investigación. Google Drive se utiliza para guardar y recuperar respaldos cifrados del propietario, comprobar su integridad y facilitar la recuperación ante fallos.</p>
+    </section>
+    <section><h2>2. Datos de Google a los que se accede</h2>
+      <p>El componente de respaldo solicita únicamente <code>https://www.googleapis.com/auth/drive.file</code>. Accede al contenido y los metadatos de los archivos utilizados por la aplicación, incluidos identificadores, nombres, tamaños, ubicación, permisos disponibles y dirección de correo del propietario cuando Google la facilita para comprobar la propiedad. Consulta la cuota de almacenamiento para evitar superar el espacio disponible.</p>
+      <p>Los paquetes pueden contener bases de datos, configuraciones sin secretos, fuentes públicas e informes y notas privadas del propietario, siempre cifrados antes de su subida. El permiso no se utiliza para explorar todo Drive, leer Gmail, contactos o calendarios.</p>
+      <p>La publicación opcional de informes en una hoja privada de Google Sheets utiliza una identidad de servicio independiente; el token OAuth de los respaldos no se utiliza para ampliar el acceso a Sheets.</p>
+    </section>
+    <section><h2>3. Uso y almacenamiento</h2>
+      <p>Los datos se utilizan exclusivamente para almacenar, verificar y recuperar el estado del proyecto. Se procesan en el equipo del propietario o, cuando se utiliza la ejecución remota, en GitHub Actions dentro del repositorio privado del proyecto.</p>
+      <p>Drive almacena los paquetes cifrados. Un registro privado de GitHub conserva los metadatos mínimos para identificar los paquetes confirmados y comprobar sus hashes. Las credenciales OAuth se guardan en archivos locales con permisos restringidos o en GitHub Secrets para las ejecuciones remotas. No se incluyen en las copias de seguridad, el código público ni los informes públicos. La clave de cifrado no se incluye con los paquetes.</p>
+    </section>
+    <section><h2>4. Proveedores y acceso</h2>
+      <p>Google presta los servicios de autorización y almacenamiento de Drive. GitHub aloja este sitio y puede prestar los servicios de ejecución y registro privado descritos. El acceso operativo se limita al propietario y a las identidades técnicas autorizadas por él para ejecutar estas funciones.</p>
+      <p>No vendemos los datos ni los utilizamos para publicidad, perfiles comerciales, entrenamiento de modelos de inteligencia artificial o finalidades ajenas al respaldo y funcionamiento descritos. No se publican los respaldos, las notas privadas ni las credenciales en este sitio.</p>
+      <p>El uso de información recibida de las API de Google se ajustará a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos sus requisitos de uso limitado cuando resulten aplicables.</p>
+    </section>
+    <section><h2>5. Conservación y eliminación</h2>
+      <p>Las generaciones de respaldo se conservan mientras el propietario necesite mantener el historial de recuperación; no existe un borrado automático por antigüedad. Los archivos incompletos pueden conservarse para diagnóstico y recuperación. El propietario puede eliminar los archivos de Drive y las copias locales, así como las credenciales y los registros privados de GitHub, utilizando los controles de cada servicio.</p>
+      <p>Retirar la autorización no elimina las copias existentes. Eliminar un respaldo puede impedir recuperar las generaciones que dependan de él. La eliminación y retención residual de los proveedores se rigen también por sus propias políticas.</p>
+    </section>
+    <section><h2>6. Revocación de acceso</h2>
+      <p>El propietario puede retirar el acceso desde <a href="https://myaccount.google.com/connections">las conexiones de terceros de su cuenta de Google</a>, seleccionando PATRIMONIO RADAR. También puede detener las ejecuciones y retirar los Secrets de GitHub. Tras la revocación, la aplicación no podrá renovar el acceso y se detendrá al fallar la autorización.</p>
+    </section>
+    <section><h2>7. Visitas a este sitio</h2>
+      <p>Estas páginas no incluyen formularios, analítica, publicidad, scripts ni cookies propias de la aplicación. GitHub Pages registra la dirección IP de las visitas por motivos de seguridad, según su <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">política de privacidad</a>. Los enlaces externos se rigen por las políticas de sus respectivos servicios.</p>
+    </section>
+    <section><h2>8. Contacto y cambios</h2>
+      <p>Para preguntas de privacidad o solicitudes relativas al proyecto, contacta con su responsable mediante el <a href="https://github.com/pocojocon/pocojocon.github.io/issues/new">canal público de contacto</a>. Indica únicamente que necesitas tratar una consulta privada; no adjuntes datos personales, tokens, claves ni respaldos.</p>
+      <p>Los cambios se publicarán en esta página con su fecha de actualización. Si cambia el acceso a datos de Google o su finalidad, se actualizará esta política y se solicitará el consentimiento correspondiente antes de ampliar el tratamiento.</p>
+    </section>
+  </main>
+  <footer class="shell"><a href="./">Volver a la presentación</a><span>PATRIMONIO RADAR</span></footer>
+</body>
+</html>
